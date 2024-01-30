@@ -1,0 +1,22 @@
+:root {
+  --pure-white: #fff;
+  --bg-color: #f9fafc;
+  --text-color: #2f3034;
+
+  --neutral-code: 0, 0%, 45%;
+  --neutral: hsl(var(--neutral-code));
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
