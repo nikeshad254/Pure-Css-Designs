@@ -20,3 +20,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
+.icon {
+  font-size: 2.4rem;
+  color: hsl(var(--neutral-code), 90%);
+}
