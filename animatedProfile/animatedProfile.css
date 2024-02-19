@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  background: var(--darkBlue);
+}
+
+.profileBox {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background: #0c112b;
+  overflow: hidden;
+}
+
+.profileBox::before {
+  content: '';
+  position: absolute;
+  inset: -1rem 10rem;
+  background: linear-gradient(#8360c3, #2ebf91);
+  transition: 0.5s ease;
+  animation: animate 4s linear infinite;
+}
+
+.profileBox:hover::before {
+  inset: -1rem;
+}
+
+.profileBox::after {
+  content: '';
+  position: absolute;
+  inset: 0.6rem;
+  background: var(--darkBlue);
+  border-radius: 50%;
+}
+
+@keyframes animate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.content {
+  position: absolute;
+  z-index: 3;
+  inset: 2rem;
+  border: 0.6rem solid #0c112b;
+  border-radius: 50%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contentImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.profileBox:hover .contentImg {
+  opacity: 0;
+}
+.content > h2 {
+  color: var(--bg-color);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.content > h2 > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.content > a {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+}
+
+.content > a:hover {
+  letter-spacing: 0.2rem;
+}

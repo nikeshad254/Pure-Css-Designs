@@ -2,6 +2,7 @@
   --pure-white: #fff;
   --bg-color: #f9fafc;
   --text-color: #2f3034;
+  --darkBlue: #102052;
 
   --neutral-code: 0, 0%, 45%;
   --neutral: hsl(var(--neutral-code));
@@ -16,7 +17,7 @@ html {
 }
 body {
   font-size: 1.4rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: var(--bg-color);
   color: var(--text-color);
 }
