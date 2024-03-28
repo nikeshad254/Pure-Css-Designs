@@ -1,5 +1,11 @@
 const projectsLists = [
   {
+    name: "Valentine Parallex",
+    desc: "This is parralex effect made using html, css and js. position absolute and js onscroll were used.",
+    url: "/valentineParallex",
+    img: "https://i.imgur.com/q2lDmpV.png",
+  },
+  {
     name: "Accordian",
     desc: "This is accordian made using css grid. This accordian is responsive and can be used in any website.",
     url: "/accordian",
