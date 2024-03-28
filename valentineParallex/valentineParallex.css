@@ -1,0 +1,38 @@
+body {
+  background-color: #ea859a;
+}
+#parallexContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+#parallexContainer > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100svh;
+  width: 100%;
+  object-fit: cover;
+}
+.mainContainer {
+  top: calc(100svh + 10rem);
+  position: absolute;
+  background-color: #ea859a;
+  z-index: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.8rem;
+}
+
+.mainContainer ul {
+  padding-left: 4rem;
+}
+
+#pearls {
+  z-index: 1;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./valentineParallex.css" />
+  </head>
+  <body>
+    <div id="parallexContainer">
+      <img src="./img/valentineText.png" alt="" id="valentineText" />
+      <img src="./img/pearls.png" alt="" id="pearls" />
+      <img src="./img/leftballoon1.png" alt="" id="leftballoon1" />
+      <img src="./img/leftballoon2.png" alt="" id="leftballoon2" />
+      <img src="./img/leftballoon3.png" alt="" id="leftballoon3" />
+      <img src="./img/leftballoon4.png" alt="" id="leftballoon4" />
+      <img src="./img/balloon1.png" alt="" id="balloon1" />
+      <img src="./img/rightballoon2.png" alt="" id="rightballoon2" />
+    </div>
+
+    <div class="mainContainer">
+      <h1>Valentine's Day: A Celebration of Love</h1>
+
+      <p>
+        Valentine's Day is an annual holiday celebrated on February 14th. It is
+        a day dedicated to expressing love and affection towards loved ones. The
+        holiday is celebrated in various ways around the world, including the
+        exchange of gifts, cards, and flowers.
+      </p>
+
+      <p>
+        The origins of Valentine's Day can be traced back to ancient Roman
+        times. The festival of Lupercalia, which was celebrated in mid-February,
+        was dedicated to fertility and the coming of spring. During this
+        festival, young men and women would be paired off by a lottery system,
+        and it was believed that the matches would lead to marriage.
+      </p>
+
+      <p>
+        Over time, the Christian church sought to Christianize the pagan
+        festival of Lupercalia. In the 5th century, Pope Gelasius I declared
+        February 14th as St. Valentine's Day, in honor of two Christian martyrs
+        named Valentine who were executed by the Roman Emperor Claudius II.
+      </p>
+
+      <p>
+        One legend suggests that St. Valentine was a priest who defied
+        Claudius's orders by secretly marrying couples so that the husbands
+        wouldn't have to go to war. Another legend suggests that St. Valentine
+        helped Christians escape harsh Roman prisons, where they were often
+        beaten and tortured.
+      </p>
+
+      <p>
+        By the Middle Ages, Valentine's Day had become associated with romantic
+        love. In the 14th century, the English poet Geoffrey Chaucer mentioned
+        Valentine's Day in his poem "The Parliament of Fowls," linking the
+        holiday with the mating season of birds.
+      </p>
+
+      <p>
+        By the 18th century, exchanging handwritten notes and tokens of
+        affection on Valentine's Day had become popular in England. These notes
+        were often called "valentines" and could be sent anonymously. The
+        tradition spread to other countries, and by the 19th century, printed
+        cards began to replace handwritten notes.
+      </p>
+
+      <p>
+        Today, Valentine's Day is celebrated around the world with various
+        customs and traditions. In addition to exchanging cards and gifts, many
+        people go out for romantic dinners, take weekend getaways, or spend
+        quality time with their loved ones.
+      </p>
+
+      <p>
+        Valentine's Day is also a popular day for marriage proposals. According
+        to a survey by the National Retail Federation, an estimated 6 million
+        couples get engaged on Valentine's Day each year.
+      </p>
+
+      <p>
+        Despite its commercialization, Valentine's Day continues to be a
+        meaningful holiday for many people. It is a day to celebrate love in all
+        its forms and to show appreciation for the special people in our lives.
+      </p>
+
+      <p>
+        Whether you're celebrating with a romantic partner, spending time with
+        friends, or simply enjoying your own company, Valentine's Day is a time
+        to reflect on the importance of love and connection.
+      </p>
+
+      <p>
+        So this Valentine's Day, take the time to show the people you care about
+        how much they mean to you. Whether it's with a heartfelt message, a
+        thoughtful gift, or simply spending time together, let them know that
+        they are loved and appreciated.
+      </p>
+    </div>
+  </body>
+  <script>
+    const valentineText = document.querySelector("#valentineText");
+    const pearls = document.querySelector("#pearls");
+    const leftballoon1 = document.querySelector("#leftballoon1");
+    const leftballoon2 = document.querySelector("#leftballoon2");
+    const leftballoon3 = document.querySelector("#leftballoon3");
+    const leftballoon4 = document.querySelector("#leftballoon4");
+    const balloon1 = document.querySelector("#balloon1");
+    const rightballoon2 = document.querySelector("#rightballoon2");
+
+    document.onscroll = () => {
+      let scroll = window.scrollY;
+      valentineText.style.top = `${scroll * 0.7}px`;
+      pearls.style.top = `${scroll * 0.6}px`;
+      leftballoon1.style.top = `${scroll * 0.8}px`;
+      leftballoon2.style.top = `${scroll * -0.55}px`;
+      leftballoon3.style.top = `${scroll * 0.5}px`;
+      leftballoon4.style.top = `${scroll * -0.25}px`;
+      balloon1.style.top = `${scroll * 0.3}px`;
+      rightballoon2.style.top = `${scroll * -0.5}px`;
+    };
+  </script>
+</html>
