@@ -1,0 +1,124 @@
+.timeLineBody {
+  margin-top: 2rem;
+}
+.timeLineOuterWrapper {
+  position: relative;
+  width: 70%;
+  margin-inline: auto;
+}
+
+.timeLineContainer::after {
+  position: absolute;
+  content: " ";
+  width: 0.4rem;
+  height: 100%;
+  background: #000;
+}
+
+.timeLineContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.timeLineCard {
+  border: 1px solid red;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  /* max-width: 40rem; */
+  width: 50%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.timeLineCard:nth-child(odd) {
+  align-self: flex-start;
+  transform: translateX(-3rem);
+}
+
+.timeLineCard:nth-child(even) {
+  align-self: flex-end;
+  transform: translateX(3rem);
+}
+
+.timeLineH1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.timeLineDate {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.timeLineCircle {
+  width: 2rem;
+  height: 2rem;
+  background: red;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeLineCircle::after {
+  content: "";
+  width: 60%;
+  height: 60%;
+  background: rgb(164, 2, 2);
+  position: absolute;
+  border-radius: 50%;
+}
+
+.timeLineCard:nth-child(odd) .timeLineCircle {
+  right: -3rem;
+  transform: translate(50%, -50%);
+}
+
+.timeLineCard:nth-child(even) .timeLineCircle {
+  left: -3rem;
+  transform: translate(-50%, -50%);
+}
+
+/* --- Media Query --- */
+@media screen and (max-width: 680px) {
+  .timeLineOuterWrapper {
+    width: 90%;
+  }
+
+  .timeLineContainer {
+    align-items: flex-start;
+  }
+
+  .timeLineCard {
+    width: 90%;
+  }
+
+  .timeLineCard:nth-child(odd) {
+    align-self: flex-start;
+    transform: translateX(3rem);
+  }
+
+  .timeLineCard:nth-child(even) {
+    align-self: flex-start;
+    transform: translateX(3rem);
+  }
+
+  .timeLineCard:nth-child(odd) .timeLineCircle {
+    left: -3rem;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeLineCard:nth-child(even) .timeLineCircle {
+    left: -3rem;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -6,10 +6,10 @@ const projectsLists = [
     img: "https://i.imgur.com/q2lDmpV.png",
   },
   {
-    name: "Accordian",
-    desc: "This is accordian made using css grid. This accordian is responsive and can be used in any website.",
-    url: "/accordian",
-    img: "https://i.imgur.com/KFzhICV.png",
+    name: "Timeline Design",
+    desc: "Although the card design is very basic this involves the timeline design. This is made using html and css.",
+    url: "/timeline",
+    img: "https://i.imgur.com/ToZHry1.png",
   },
   {
     name: "Animated Profile",
@@ -34,6 +34,12 @@ const projectsLists = [
     desc: "This is example of grid layout in the list form, list are of four types text, avatar, bin variants.",
     url: "/listsCollection",
     img: "https://i.imgur.com/SKJGUhk.png",
+  },
+  {
+    name: "Accordian",
+    desc: "This is accordian made using css grid. This accordian is responsive and can be used in any website.",
+    url: "/accordian",
+    img: "https://i.imgur.com/KFzhICV.png",
   },
 ];
 
